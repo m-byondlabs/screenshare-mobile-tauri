@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".com.plugin.bl.mobile.screen.capture.FGLauncherActivity"
+            android:exported="false" />
+        <profileable android:shell="true" />
+        <service
+            android:name=".MyMediaProjectionService"
+            android:foregroundServiceType="mediaProjection" />
+    </application>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+</manifest>
